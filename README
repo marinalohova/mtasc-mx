@@ -1,0 +1,14 @@
+Red5 Server Flash Compiler
+=====================================
+This kit includes AS2 compiler and MX component classes necessary to compile Flash for Red5 Media Server 1.0.1 
+Compiler included is for OSX, but the compiler website has binaries for Windows and Linux platforms as well.
+
+Package includes:
+* MTASC 1.12 for OSX
+  http://www.mtasc.org/
+* Macromedia Flash MX libraries in bin/std
+
+Examples (OSX)
+=====================================
+> export PATH="$HOME/mtasc-mx/bin:$HOME/mtasc-mx/bin/std:$PATH"
+> ./mtasc -version 8 -cp "." -swf yourApplication.swf -mx com/example/Main.as -v
